@@ -592,3 +592,40 @@ label {
   /* テキストの高さ調整 */
   padding-bottom: 15px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* すべてのラジオボタンのデフォルトスタイルを削除 */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  border-radius: 50%;
+  position: relative;
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+/* 選択されたときのスタイル */
+input[type="radio"]:checked {
+  border: 6px solid #007bff;
+}
