@@ -1,0 +1,271 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ - みなの家づくり</title>
+
+  <!-- SEO対策 metaタグ -->
+  <meta name="description" content="みなの家づくりの無料相談フォーム。お家づくりに関するご質問やご相談はこちらからどうぞ。">
+  <meta name="keywords" content="家づくり,住宅購入,建売住宅,注文住宅,お問い合わせ">
+  <meta name="robots" content="index, follow">
+
+  <!-- OGP (SNSシェア用) -->
+  <meta property="og:title" content="お問い合わせ - みなの家づくり">
+  <meta property="og:description" content="お家づくりのご相談をご希望の方は、お気軽にお問い合わせください。">
+  <meta property="og:image" content="https://example.com/img/contact_ogp.jpg">
+  <meta property="og:url" content="https://example.com/contact">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="お問い合わせ - みなの家づくり">
+  <meta name="twitter:description" content="お家づくりに関するご相談はこちらからどうぞ。">
+  <meta name="twitter:image" content="https://example.com/img/contact_ogp.jpg">
+
+  <!-- CSS・フォント -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&amp;family=Zen+Old+Mincho&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- お問い合わせフォームはここから -->
+  <div class="post_content">
+    <div class="home_css">
+      <section id="cta">
+        <div class="heading_img"><img decoding="async" src="img/contact_icon.png" alt=""></div>
+        <h2 class="heading01" data-en="Contact">お問い合わせ</h2>
+        <p class="cta_txt">ホームページへお越しいただき、ありがとうございます。<br>
+          お家づくりのご相談をご希望の方は、 以下よりお気楽にお問い合わせください。</p>
+        <p></p>
+        <form action="confirm.php" method="post" class="wpcf7-form contact-form form_style01">
+          <table class="contact-form form_style01">
+            <tbody>
+              <tr>
+                <th>
+                  <p>お名前<span class="required-icon">必須</span></p>
+                </th>
+                <td>
+                  <input size="40" class="wpcf7-form-control wpcf7-text" type="text" name="name" required="" placeholder="例：名字のみで大丈夫です"
+                  autocomplete="name">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <p>フリガナ<span class="required-icon">必須</span></p>
+                </th>
+                <td>
+                  <input size="40" class="wpcf7-form-control wpcf7-text" type="text" name="kana" required="" placeholder="例：ヤマダ"
+                  autocomplete="off">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <p>お電話番号<span class="required-icon">必須</span></p>
+                </th>
+                <td>
+                  <input size="40" class="wpcf7-form-control wpcf7-tel" type="tel" name="tel" required="" pattern="[0-9]+"
+                  oninput="this.value=this.value.replace(/[^0-9]/g,'')" placeholder="例：09011112222（半角数字のみ）" autocomplete="tel">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <p>メールアドレス<span class="required-icon">必須</span></p>
+                </th>
+                <td>
+                  <input size="40" class="wpcf7-form-control wpcf7-email" type="email" name="email" required=""
+                  placeholder="例：sample@hyhome.jp" autocomplete="email">
+                </td>
+              </tr>
+
+              <tr>
+                <th>
+                  <p>お住まいの都道府県<span class="required-icon">必須</span></p>
+                </th>
+                <td>
+                  <select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true"
+                    aria-invalid="false" name="prefecture" required="">
+                    <option value="">選択して下さい</option>
+                    <option value="北海道">北海道</option>
+                    <option value="青森県">青森県</option>
+                    <option value="岩手県">岩手県</option>
+                    <option value="宮城県">宮城県</option>
+                    <option value="秋田県">秋田県</option>
+                    <option value="山形県">山形県</option>
+                    <option value="福島県">福島県</option>
+                    <option value="茨城県">茨城県</option>
+                    <option value="栃木県">栃木県</option>
+                    <option value="群馬県">群馬県</option>
+                    <option value="埼玉県">埼玉県</option>
+                    <option value="千葉県">千葉県</option>
+                    <option value="東京都">東京都</option>
+                    <option value="神奈川県">神奈川県</option>
+                    <option value="新潟県">新潟県</option>
+                    <option value="富山県">富山県</option>
+                    <option value="石川県">石川県</option>
+                    <option value="福井県">福井県</option>
+                    <option value="山梨県">山梨県</option>
+                    <option value="長野県">長野県</option>
+                    <option value="岐阜県">岐阜県</option>
+                    <option value="静岡県">静岡県</option>
+                    <option value="愛知県">愛知県</option>
+                    <option value="三重県">三重県</option>
+                    <option value="滋賀県">滋賀県</option>
+                    <option value="京都府">京都府</option>
+                    <option value="大阪府">大阪府</option>
+                    <option value="兵庫県">兵庫県</option>
+                    <option value="奈良県">奈良県</option>
+                    <option value="和歌山県">和歌山県</option>
+                    <option value="鳥取県">鳥取県</option>
+                    <option value="島根県">島根県</option>
+                    <option value="岡山県">岡山県</option>
+                    <option value="広島県">広島県</option>
+                    <option value="山口県">山口県</option>
+                    <option value="徳島県">徳島県</option>
+                    <option value="香川県">香川県</option>
+                    <option value="愛媛県">愛媛県</option>
+                    <option value="高知県">高知県</option>
+                    <option value="福岡県">福岡県</option>
+                    <option value="佐賀県">佐賀県</option>
+                    <option value="長崎県">長崎県</option>
+                    <option value="熊本県">熊本県</option>
+                    <option value="大分県">大分県</option>
+                    <option value="宮崎県">宮崎県</option>
+                    <option value="鹿児島県">鹿児島県</option>
+                    <option value="沖縄県">沖縄県</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <p>ご計画内容</p>
+                </th>
+                <td>
+                  <select class="wpcf7-form-control wpcf7-select" name="plan">
+                    <option value="">選択して下さい</option>
+                    <option value="何からはじめてよいかわからないので、全面的に相談したい">何からはじめてよいかわからないので、全面的に相談したい</option>
+                    <option value="住宅購入を検討しているので、相談したい">住宅購入を検討しているので、相談したい</option>
+                    <option value="建売住宅について検討しているので、相談したい">建売住宅について検討しているので、相談したい</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <p>建売住宅の購入予定</p>
+                </th>
+                <td>
+                  <p>
+                    <label>
+                      <input type="checkbox" name="purchase_plan[]" value="今すぐ"> 今すぐ
+                    </label>
+                    <br class="pc">
+                    <label>
+                      <input type="checkbox" name="purchase_plan[]" value="3ヶ月以内"> 3ヶ月以内
+                    </label>
+                    <br class="pc">
+                    <label>
+                      <input type="checkbox" name="purchase_plan[]" value="半年以内"> 半年以内
+                    </label>
+                    <br class="pc">
+                    <label>
+                      <input type="checkbox" name="purchase_plan[]" value="未定"> 未定
+                    </label>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <p>その他（自由記入）</p>
+                </th>
+                <td>
+                  <textarea class="wpcf7-form-control wpcf7-textarea" name="message" rows="5"
+                  placeholder="例：まだこれから計画をする段階ですが..."></textarea>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- 個人情報保護方針 -->
+          <div class="contact-form_privacy">
+            <h2>個人情報保護方針
+            </h2>
+            <p>株式会社
+              hyhome（以下、当社といいます）は、営業活動をはじめとする様々な業務において、お客様等より取得する個人情報、また、当社の従業者の個人情報を適切に管理することは重要な社会的責務であるとの認識のもと、個人情報保護に関する方針を以下のとおり定め、役員および従業者に周知徹底を図り、個人情報の保護に努めます。
+            </p>
+            <dl>
+              <dt>1.個人情報の管理
+              </dt>
+              <dd>当社は、個人情報を適切に保護、管理する体制を確立し、個人情報の適正な取得、利用および提供に関する社内規程を定め、これを遵守します。
+              </dd>
+              <dt>2.個人情報の取得および利用
+              </dt>
+              <dd>当社は、個人情報を取得および利用する場合には、利用目的を明確にし、特定された利用目的の達成に必要な範囲内で適正に個人情報を取扱うとともに、目的外利用を阻止するための措置を講じています。
+              </dd>
+              <dt>3.個人情報の提供
+              </dt>
+              <dd>当社は、個人情報について、あらかじめご本人から同意をいただいた提供先以外の第三者に提供、開示等はいたしません。
+              </dd>
+              <dt>4.個人情報の外部委託
+              </dt>
+              <dd>
+                取得した個人情報は、ダイレクトメールの発送や情報処理等の目的で外部に業務委託することがあります。委託に際しては、個人情報の保護水準が、当社が設定する安全対策基準を満たす事業者を選定し、適切な管理、監督を行います。
+              </dd>
+              <dt>5.個人情報の安全対策
+              </dt>
+              <dd>個人情報への不正アクセス、個人情報の滅失、毀損、改ざんおよび漏洩等のリスクに対して、適切な安全対策を実施するとともに、改善が必要と判断されたときには、速やかにこれを是正いたします。
+              </dd>
+              <dt>6.個人情報の苦情・相談への対応
+              </dt>
+              <dd>個人情報への不正アクセス、個人情報の滅失、毀損、改ざんおよび漏洩等のリスクに対して、適切な安全対策を実施するとともに、改善が必要と判断されたときには、速やかにこれを是正いたします。
+              </dd>
+              <dt>7.法令等の遵守
+              </dt>
+              <dd>個人情報の取扱いに関する法令、国が定める指針、その他規範を遵守します。
+              </dd>
+              <dt>株式会社 hyhome<br>
+                個人情報保護方針に関する問合せ先<br>
+                TEL 09064684656
+              </dt>
+            </dl>
+          </div>
+
+          <!-- 同意チェック -->
+          <div class="contact-form_pp-agree">
+            <p>個人情報の取り扱いをよくお読みの上、「同意する」をご選択ください。</p>
+            <p>
+              <label>
+                <input type="checkbox" name="privacy" id="privacy_check" required="">
+                <span class="mwform-checkbox-field-text">同意する</span>
+              </label>
+            </p>
+          </div>
+          <div class="form__button">
+            <div class="form__button-submit"><button type="submit"><img src="img/button_contact.svg"
+                  alt="送信する"></button></div>
+          </div>
+        </form>
+
+        <script>
+          function validateForm() {
+            // 「同意する」のチェック確認
+            let privacyCheck = document.getElementById("privacy_check");
+            if (!privacyCheck.checked) {
+              alert("個人情報保護方針に同意してください。");
+              return false;
+            }
+            return true;
+          }
+        </script>
+      </section>
+    </div>
+  </div>
+  <!-- お問い合わせフォームはここまで -->
+  <footer id="footer">
+    <p id="copyright"><span>© みなの家づくり.</span></p>
+  </footer>
+</body>
+
+</html>

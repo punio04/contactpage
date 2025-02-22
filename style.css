@@ -1,0 +1,537 @@
+@charset "utf-8";
+
+.contact-form {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form dt {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+}
+
+@media (max-width: 1000px) {
+  .contact-form dt {
+    font-size: calc(1.6rem + ((1vw - 0.768rem) * 0.862));
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form dt {
+    font-size: calc(1.4rem + ((1vw - 0.32rem) * 0.4464));
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-form dt {
+    font-size: 1.4rem;
+  }
+}
+
+.contact-form dd {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .contact-form dd {
+    margin-bottom: calc(20px + 20 * (100vw - 320px)/448);
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-form dd {
+    margin-bottom: 20px;
+  }
+}
+
+.form_style01 {
+  max-width: 800px;
+  width: 1000px;
+  margin: 0 auto 30px;
+  font-size: clamp(1.2rem, 3.4vw, 1.6rem);
+  table-layout: fixed;
+}
+
+.form_style01 input,
+.form_style01 select,
+.form_style01 textarea {
+  padding: 1.5rem 1rem;
+  width: 100%;
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+
+  .form_style01 input,
+  .form_style01 select,
+  .form_style01 textarea {
+    font-size: calc(1.4rem + ((1vw - 0.768rem) * 0.862));
+  }
+}
+
+@media (max-width: 768px) {
+
+  .form_style01 input,
+  .form_style01 select,
+  .form_style01 textarea {
+    font-size: calc(1.2rem + ((1vw - 0.32rem) * 0.4464));
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .form_style01 input,
+  .form_style01 select,
+  .form_style01 textarea {
+    font-size: 1.2rem;
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+  }
+}
+
+tbody p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.form_style01 .required-icon {
+  display: inline-block;
+  color: #EC8D6D;
+  margin-left: 7px;
+  font-size: 1rem;
+  line-height: 1;
+  vertical-align: middle;
+  border: 1px solid #EC8D6D;
+  padding: 2px 3px;
+  margin-bottom: 4px;
+}
+
+.form_style01 td,
+.form_style01 th {
+  padding: 20px 0;
+  border-bottom: 1px solid #151a5956;
+}
+
+.form_style01 th {
+  line-height: 1.1;
+  vertical-align: top;
+  width: 250px;
+}
+
+@media (max-width: 768px) {
+
+  .form_style01 td,
+  .form_style01 th {
+    display: block;
+    width: 100%;
+  }
+
+  .form_style01 th {
+    border-bottom: none;
+    padding: 20px 0 0;
+  }
+}
+
+input[type="checkbox"] {
+  width: inherit;
+}
+
+.contact-form_privacy {
+  height: 110px;
+  border: 1px solid #999;
+  overflow-y: scroll;
+  margin: 0 auto 30px;
+  max-width: 800px;
+  padding: 2em 1.5em 1em;
+  font-size: clamp(1rem, 3vw, 1.5rem)
+}
+
+.contact-form_privacy dt {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact-form_privacy dd {
+  margin: 0 0 30px;
+  font-size: 16px;
+  text-align: left !important;
+}
+
+.contact-form_privacy h2 {
+  margin: 0 0 20px;
+  font-size: 20px !important;
+  font-weight: 600;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+.contact-form_privacy p {
+  margin: 0 0 30px;
+  font-size: 16px !important;
+  line-height: normal;
+}
+
+.contact-form_pp-agree {
+  margin: 0 auto 30px;
+  max-width: 800px;
+  font-size: clamp(0.9rem, 0.9vw, 0.9rem);
+}
+
+body {
+  font-family: "游ゴシック体",
+    "Yu Gothic",
+    YuGothic,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif !important;
+}
+
+.contact-form p {
+  text-align: left !important;
+}
+
+.form__button-submit {
+  text-align: center;
+}
+
+button {
+  width: 60%;
+  cursor: pointer;
+  border: initial;
+  background-color: initial;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.post_content img {
+  width: 100% !important;
+}
+
+/* メディアクエリによる修正 */
+
+body {
+  background-color: #E1DCD4;
+}
+
+/* ベースフォントカラーを#373737 */
+body {
+  color: #4c4c4c;
+  margin: 0px;
+  padding: 20px 0 0 0;
+}
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc {
+  display: block !important;
+}
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+  .pc {
+    display: none !important;
+  }
+}
+
+.home_css h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.5;
+  font-style: normal;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .home_css h2 {
+    font-size: 25px;
+  }
+}
+
+.home_css p {
+  font-size: 18px;
+  line-height: 2 !important;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+  .home_css p {
+    font-size: 16px !important;
+  }
+}
+
+.heading01 {
+  position: relative;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Zen Old Mincho", serif;
+  font-style: normal;
+}
+
+.heading01::after {
+  content: attr(data-en);
+  font-family: "IM Fell French Canon SC";
+  display: block;
+  color: #79696C;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*hedding01の上のimg */
+.heading_img {
+  height: 50px;
+  width: 50px;
+  margin: 0px auto;
+  padding-top: 30px;
+}
+
+.flow {
+  position: relative;
+}
+
+#cta {
+  background-position: top;
+  background-image: url("img/back_white.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  padding: 30px 0px 50px 0px;
+  position: relative;
+}
+
+@media screen and (max-width: 700px) {
+  #cta {
+    padding: 30px 10px;
+  }
+}
+
+#cta dt {
+  text-align: left;
+  line-height: 2;
+}
+
+#cta dd {
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  #cta dd {
+    text-align: left;
+  }
+}
+
+#cta p {
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  #cta p {
+    text-align: left;
+  }
+}
+
+.cta_txt {
+  text-align: center;
+  line-height: 1.5;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 700px) {
+  .cta_txt {
+    text-align: left;
+    padding: 0px 30px;
+  }
+}
+
+footer#footer {
+  text-align: center;
+}
+
+.pc {
+  display: block !important;
+}
+
+
+/* ======= スマホ向け調整 (PCのデザインはそのまま) ======= */
+@media (max-width: 768px) {
+
+  .pc {
+    display: none !important;
+  }
+
+  .contact-form_privacy {
+    height: 110px;
+    border: 1px solid #999;
+    overflow-y: scroll;
+    margin: 30px auto 30px;
+    width: 90%;
+  }
+
+  .contact-form_pp-agree {
+    margin: 0 auto 30px;
+    width: 90%;
+    font-size: clamp(0.9rem, 0.9vw, 0.9rem);
+  }
+
+  /* フォームの幅を調整（はみ出し防止） */
+  .contact-form {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  /* テーブルのレイアウトを縦並びに */
+  .form_style01 th,
+  .form_style01 td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* 入力欄の余白を調整 */
+  .form_style01 input,
+  .form_style01 select,
+  .form_style01 textarea {
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* ボタンの幅を調整 */
+  .form__button-submit {
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    max-width: 440px;
+    padding: 0px;
+    font-size: 16px;
+  }
+
+  /* ラベルのマージン調整 */
+  .form_style01 label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  /* プライバシーポリシーの枠調整 */
+  .contact-form_privacy {
+    height: 120px;
+    padding: 1em;
+    font-size: 14px;
+  }
+
+  /* 送信ボタンの間隔調整 */
+  .form__button {
+    margin-top: 20px;
+  }
+
+  /* チェックボックスのサイズ調整 */
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-form p {
+    margin: 0 0 10px 0;
+  }
+
+  .contact-form td {
+    padding: 0 0 30px 0;
+  }
+}
+
+/* ======= PCのデザインはそのまま維持 ======= */
+@media (min-width: 769px) {
+  .contact-form {
+    max-width: 800px;
+  }
+
+  .form_style01 th {
+    width: 250px;
+  }
+}
+
+
+
+
+
+
+
+/* ======= 確認画面のデザイン調整 ======= */
+.confirm-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.confirm-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.confirm-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.confirm-table th,
+.confirm-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-size: 16px;
+}
+
+.confirm-table th {
+  width: 40%;
+  font-weight: bold;
+  background-color: #f8f8f8;
+}
+
+.confirm-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.confirm-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.confirm-buttons .send-btn {
+  background-color: #ec8d6d;
+  color: #fff;
+}
+
+.confirm-buttons .send-btn:hover {
+  opacity: 0.8;
+}
+
+.confirm-buttons .back-btn {
+  background-color: #ccc;
+  color: #333;
+}
+
+.confirm-buttons .back-btn:hover {
+  background-color: #aaa;
+}
