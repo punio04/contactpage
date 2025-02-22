@@ -609,34 +609,31 @@ label {
 
 
 
-
-
-/* ラジオボタンのデフォルトスタイルを削除 */
+/* ラジオボタンのサイズ調整を強制適用 */
 input[type="radio"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 16px;
-  /* 🔹 サイズを小さめに調整 */
-  height: 16px;
-  border: 2px solid #999;
-  border-radius: 50%;
-  position: relative;
-  vertical-align: middle;
-  background-color: #fff;
-  transition: all 0.2s;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  width: 18px !important;
+  /* 🔹 ここを 16px → 18px にしてみる */
+  height: 18px !important;
+  border: 2px solid #999 !important;
+  border-radius: 50% !important;
+  position: relative !important;
+  vertical-align: middle !important;
+  background-color: #fff !important;
+  transition: all 0.2s !important;
 }
 
-/* 選択されたときのスタイル */
+/* 選択されたときのデザイン */
 input[type="radio"]:checked {
-  border: 6px solid #007bff;
-  /* 🔹 選択時の内側の色を調整 */
+  border: 5px solid #007bff !important;
+  /* 🔹 ちょっと小さめに */
 }
 
-/* ラベルとの距離を調整 */
+/* ラベルとの間隔 */
 input[type="radio"]+label {
-  margin-left: 5px;
-  font-size: 16px;
-  /* 🔹 文字サイズも合わせる */
-  vertical-align: middle;
+  margin-left: 8px !important;
+  font-size: 16px !important;
+  vertical-align: middle !important;
 }
