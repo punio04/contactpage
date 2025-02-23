@@ -142,7 +142,7 @@ tbody p {
 
 input[type="checkbox"] {
   width: inherit;
-  padding: 0px!important;
+  padding: 0px !important;
 }
 
 input[type="radio"] {
@@ -303,10 +303,6 @@ body {
   padding-top: 30px;
 }
 
-.flow {
-  position: relative;
-}
-
 #cta {
   background-position: top;
   background-image: url("img/back_white.png");
@@ -320,6 +316,7 @@ body {
 @media screen and (max-width: 700px) {
   #cta {
     padding: 30px 10px;
+    background-image: url("img/back_white_sp.png");
   }
 }
 
@@ -449,7 +446,7 @@ footer#footer {
   input[type="checkbox"] {
     width: 20px !important;
     height: 20px !important;
-    padding: 0px!important;
+    padding: 0px !important;
   }
 
   /* チェックボックスのサイズ調整 */
@@ -485,64 +482,6 @@ footer#footer {
 
 
 /* ======= 確認画面のデザイン調整 ======= */
-.confirm-container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.confirm-container h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.confirm-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-.confirm-table th,
-.confirm-table td {
-  padding: 12px;
-  border-bottom: 1px solid #ddd;
-  text-align: left;
-  font-size: 16px;
-}
-
-.confirm-table th {
-  width: 40%;
-  font-weight: bold;
-  background-color: #f8f8f8;
-}
-
-.confirm-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.confirm-buttons button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.confirm-buttons .send-btn {
-  background-color: #ec8d6d;
-  color: #fff;
-}
-
-.confirm-buttons .send-btn:hover {
-  opacity: 0.8;
-}
 
 
 
@@ -570,7 +509,7 @@ input[type="checkbox"] {
   /* テキストとの間隔を調整 */
   vertical-align: middle;
   /* チェックボックスの位置を調整 */
-  padding: 0px!important;
+  padding: 0px !important;
 }
 
 input[type="radio"] {
@@ -636,11 +575,6 @@ input[type="radio"]:checked {
 }
 
 /* ラベルとの間隔 */
-input[type="radio"]+label {
-  margin-left: 8px !important;
-  font-size: 16px !important;
-  vertical-align: middle !important;
-}
 
 
 
